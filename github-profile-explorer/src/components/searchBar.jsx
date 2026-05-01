@@ -1,22 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function SearchBar({ onSearch }) {
   const [input, setInput] = useState("");
 
+  // debounce logic
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (input.trim()) {
+        onSearch(input.trim());
+      }
+    }, 500); // 500ms delay
+
+    return () => clearTimeout(timer);
+  }, [input]);
+
   return (
-    <div className="flex gap-2 mb-4">
+    <div className="search-bar">
       <input
-        className="p-2 border rounded w-full"
-        placeholder="Enter GitHub username"
+        placeholder="Search GitHub username..."
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
-      <button
-        onClick={() => onSearch(input)}
-        className="bg-blue-500 text-white px-4 rounded"
-      >
-        Search
-      </button>
     </div>
   );
 }

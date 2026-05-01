@@ -7,14 +7,26 @@
 
 .repo-card {
   background: white;
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  transition: 0.2s;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  transition: 0.2s ease;
+  cursor: pointer;
 }
 
 .repo-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.repo-card h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.repo-card p {
+  font-size: 13px;
+  color: #555;
 }
 
 .dark .repo-card {

@@ -1,0 +1,37 @@
+.dashboard {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.section {
+  margin-top: 28px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+/* search bar spacing */
+.search-wrapper {
+  margin-bottom: 20px;
+}
+
+/* error message */
+.error-box {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #ffe4e4;
+  color: #b91c1c;
+}
+
+/* dark mode */
+.dark .error-box {
+  background-color: #7f1d1d;
+  color: #fecaca;
+}
+
