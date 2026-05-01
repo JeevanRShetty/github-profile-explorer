@@ -1,0 +1,23 @@
+.repo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.repo-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: 0.2s;
+}
+
+.repo-card:hover {
+  transform: translateY(-3px);
+}
+
+.dark .repo-card {
+  background: #1e293b;
+  border-color: #334155;
+}

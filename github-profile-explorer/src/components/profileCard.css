@@ -1,0 +1,28 @@
+.profile-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark .profile-card {
+  background: #1e293b;
+}
+
+.avatar {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.meta {
+  font-size: 14px;
+  color: gray;
+}
